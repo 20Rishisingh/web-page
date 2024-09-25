@@ -1,0 +1,291 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #c77398;
+   overflow-x: hidden;
+}
+
+.navbar{
+   display: flex;
+   height: 12vh;
+   width: 99vw;
+   position: fixed;
+   background-color: black;
+   color: aliceblue;
+   justify-content: space-between;
+   padding: 5px 20px;
+   z-index: 2;
+}
+
+.navbar .logo img{
+   height: 5rem;
+   width: 5rem;
+   border-radius: 40px;
+   object-fit: contain;
+   margin: 0 8rem;
+   cursor: pointer;
+}
+
+.navbar .tabs ul{
+   display: flex;
+   margin: 1.5rem 3rem;
+}
+
+.navbar .tabs li{
+   list-style: none;
+   margin: 0 2rem;
+   font-size: 22px;
+   cursor: pointer;
+}
+
+.navbar .tabs a{
+   color: aliceblue;
+}
+
+.navbar .tabs a:hover{
+   text-decoration: 2px underline yellow;
+   transition: 0.5s;
+   color: #c77398;
+}
+
+#home{
+   background-image: url(./bg-img.jpg);
+   height: 100vh;
+   width: 100vw;
+   position: relative;
+   background-size: cover;
+   background-position: center 65%;
+   /* background: fixed; */
+   z-index: 0;
+}
+
+#home .text{
+   /* border: 3px solid; */
+   margin: auto;
+   padding: 10%;
+   height: 40%;
+   width: 72%;
+   text-align: center;
+   color: black;
+}
+
+#home .text h1{
+   font-size: 40px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 10px;
+}
+
+#home .text p{
+   font-size: 25px;
+   font-weight: bold;
+   margin: 10px;
+}
+
+#home .text button{
+   height: 3rem;
+   width: 12rem;
+   font-size: 18px;
+   padding: 5px;
+   font-weight: bold;
+   margin: 10px;
+   border-radius: 10px;
+   background-color: black;
+   color: aliceblue;
+}
+
+#home .text button:hover{
+   background-color: rgb(0, 0, 0,0);
+   cursor: pointer;
+   color: black;
+   transition: 0.4s;
+}
+
+#services{
+   height: 125vh;
+   width: 99vw;
+   text-align: center;
+   margin: 3rem 0;
+   padding: 2rem;
+   z-index: 1;
+
+}
+
+#services .content h3{
+   font-size: 35px;
+   margin: auto 5px;
+   color: aliceblue;   
+}
+
+#services .content p{
+   font-size: 20px;
+   margin: 5px;
+   color: aliceblue;
+}
+
+#services .card-container{
+   /* border: 2px solid; */
+   height: 100%;
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+#services .card-container .card{
+   /* border: 1px solid red; */
+   height: 40%;
+   width: 30%;
+   padding: 15px;
+   margin-top: 5%;
+   border-radius: 12px;
+   background-color: azure;
+   box-shadow: 5px 8px 10px black;
+}
+
+#services .card-container .card img{
+   height: 50%;
+   width: 50%;
+   border-radius: 50%;
+}
+
+#services .card-container .card h5{
+   font-size: 25px;
+   font-weight: bold;
+   margin: 10px;
+}
+
+#services .card-container .card p{
+   font-size: 20px;
+   margin: 10px;
+}
+
+#about{
+   /* border: 2px solid black; */
+   height: 100vh;
+   width: 80vw;
+   margin: 3% auto;
+   padding: 3%;
+}
+
+#about .content h3{
+   font-size: 35px;
+   /* margin: auto; */
+   text-align: center;
+   color: aliceblue;   
+}
+
+#about .content p{
+   font-size: 20px;
+   margin: 5px;
+   text-align: center;
+   color: aliceblue;
+}
+
+#about .details{
+   margin: 3rem 1rem;
+}
+
+#about .details .data h4{
+   font-size: 25px;
+   color: aliceblue;
+   text-decoration: underline 2px black;
+   margin: 10px 0;
+}
+
+#about .details .data p{
+   font-size: 20px;
+   margin: 10px 15px;
+}
+
+#about .details .data ul{
+   font-size: 20px;
+   margin: 10px 30px;
+}
+
+#contact{
+   /* border: 1px solid black; */
+   height: 100vh;
+   width: 80vw;
+   margin: -3% auto;
+   padding: 3%;
+}
+
+#contact .content h3{
+font-size: 35px;
+/* margin: auto; */
+text-align: center;
+color: aliceblue;   
+}
+
+#contact .content p{
+font-size: 20px;
+margin: 5px;
+text-align: center;
+color: aliceblue;
+}
+
+#contact .contact-form{
+   /* border: 2px solid red; */
+   height: 60vh;
+   width: 75vw;
+   margin: auto;
+   padding: 5px;
+   display: flex;
+   justify-content: space-around;
+}
+
+#contact .text-area{
+   /* border: 3px solid blue; */
+   width: 35vw;
+   height: 50vh;
+   margin: auto 10px;
+   padding: 5px;
+   font-size: 25px;
+   line-height: 2;
+}
+
+#contact .contact-form .form{
+   /* border: 3px solid blue; */
+   width: 35vw;
+   height: 50vh;
+   margin: auto 10px;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+#contact .form .name{
+   font-size: 25px;
+   margin: 10px;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+#contact .form .email{
+   font-size: 25px;
+   margin: 10px;
+   padding: 5px 10px;
+   border-radius: 5px
+}
+
+#contact .form .msg{
+   font-size: 25px;
+   margin: 10px;
+   padding: 5px 10px;
+   border-radius: 5px
+}
+
+#contact .form .submit{
+   height: 4vh;
+   width: 8vw;
+   border-radius: 20px;
+   margin: auto;
+   font-weight: bold;
+   font-size: 20px;
+   cursor: pointer;
+}
